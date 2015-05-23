@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+
+        .scrolltable {
+            overflow-x: scroll;
+            height: 100%;
+            display: flex;
+            display: -webkit-flex;
+            flex-direction: column;
+            -webkit-flex-direction: column;
+        }
+        .scrolltable > .header {
+        }
+        .scrolltable > .body {
+            /*noinspection CssInvalidPropertyValue*/
+            width: -webkit-fit-content;
+            overflow-y: scroll;
+            flex: 1;
+            -webkit-flex: 1;
+        }
+
+        th, td {
+            min-width: 150px;
+        }
+
+        /* an outside constraint to react against */
+        #constrainer {
+            width: 400px;
+            height: 200px;
+        }
+
+
+        /* only styling below here */
+        #constrainer {
+            border: 1px solid lightgrey;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid gray;
+        }
+        th {
+            background-color: lightgrey;
+            border-width: 1px;
+        }
+        td {
+            border-width: 1px;
+        }
+        tr:first-child td {
+            border-top-width: 0;
+        }
+        tr:nth-child(even) {
+            background-color: #eee;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div id="constrainer">
+    <div class="scrolltable">
+        <table class="header"><thead><th>foo</th><th>foo</th><th>foo</th><th>foo</th></thead></table>
+        <div class="body">
+            <table>
+                <tbody>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
