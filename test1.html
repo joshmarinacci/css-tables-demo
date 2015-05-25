@@ -34,8 +34,33 @@
         }
 
 
+
+
+
+
+
+
+        #constrainer2 {
+            width: 400px;
+            overflow-x: scroll;
+        }
+        #constrainer2 table {
+            overflow-y: scroll;
+        }
+        #constrainer2 tbody {
+            overflow-x: scroll;
+            display: block;
+            height: 200px;
+        }
+        #constrainer2 thead {
+            display: table-row;
+        }
+
+
+
+
         /* only styling below here */
-        #constrainer {
+        #constrainer, #constrainer2 {
             border: 1px solid lightgrey;
         }
         table {
@@ -62,6 +87,8 @@
     </style>
 </head>
 <body>
+
+<h3>With nested divs</h3>
 
 <div id="constrainer">
     <div class="scrolltable">
@@ -105,6 +132,50 @@
         </div>
     </div>
 </div>
+
+
+<h3>No nested divs</h3>
+<div id="constrainer2">
+    <table>
+        <thead>
+        <th>foo</th><th>foo</th><th>foo</th><th>foo</th>
+        </thead>
+        <tbody>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        <tr><td>foo</td><td>foo</td><td>foo</td><td>foo</td></tr>
+        </tbody>
+    </table>
+</div>
+
 
 </body>
 </html>
